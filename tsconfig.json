@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "es2020",
+    "moduleDetection": "force",
+    "lib": ["ES2020", "DOM"],
+    "rootDir": "./TS",
+    "outDir": "./JS",
+    "allowJs": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noEmitOnError": true
+  },
+  "include": ["TS/**/*.ts"],
+  "exclude": ["node_modules"]
+}
