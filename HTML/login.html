@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logga in</title>
+    <link rel="stylesheet" href="../CSS/app.css" />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <script src="../JS/login.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logotyp">
+            <img src="/images/logotyp.jpg" alt="Svampletarnas logotyp">
+        </div>
+    </header>
+    <main>
+        <a href="index.html" class="back-button">Tillbaka till startsidan</a>
+        <form> <!-- Vårt formsobjekt. Tomt då vi ändå sköter all funktion via JS -->
+            <h1>Logga In</h2>
+            <p id="wrongDetails" hidden>Felaktiga inloggningsuppgifter</p>
+            <!-- Gömd som default, kommer fram vid fel inmatning -->
+            <!-- text input för användarnamn -->
+            <p>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name">
+            </p>
+            <!-- text input för lösenord-->
+            <p>
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" name="password">
+            </p>
+            <p>
+                <!-- submit input för att spara data -->
+                <input type="submit" value="Logga In">
+            </p>
+        </form>
+    </main>
+</body>
+
+</html>
