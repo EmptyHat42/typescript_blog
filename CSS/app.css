@@ -288,6 +288,22 @@ footer p
   margin: 0.5rem 0;
 }
 
+.redirect-button {
+    background-color: var(--darkgreen);
+    color: var(--white);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+}
+
+.redirect-button:hover {
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
+}
+
 
 
 /* ===================================

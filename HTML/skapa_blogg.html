@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skapa Blogginlägg</title>
+    <link rel="stylesheet" href="../CSS/app.css" />
+    <link rel="stylesheet" href="../CSS/skapa_blogg.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+    <script src="../JS/blogg.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Huvudnavigation">
+            <div class="logotyp">
+                <img src="/images/logotyp.jpg" alt="Svampletarnas logotyp">
+                <h1>Svampletarna</h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="blogg.html" class="redirect-button">Tillbaka till bloggsidan</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <h2>Skapa ett blogginlägg</h2>
+            <p>
+                <label for="Title">Titel:</label>
+                <input type="text" id="Title" name="Title" placeholder="Skriv in titel..." required>
+            </p>
+            <p>
+                <label for="blogText">Inlägg:</label>
+                <textarea id="blogText" name="blogText" rows="20" placeholder="Skriv ditt inlägg här..." required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Publicera Inlägg">
+            </p>
+        </form>
+    </main>
+    <footer>
+        <p>Svampletarna – För dig som älskar skogen</p>
+        <p>&copy; 2026 Svampletarna</p>
+    </footer>
+</body>
+
+</body>
+
+</html>
