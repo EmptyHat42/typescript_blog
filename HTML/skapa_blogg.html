@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/app.css" />
     <link rel="stylesheet" href="../CSS/skapa_blogg.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
-    <script src="../JS/blogg.js" defer></script>
+    <script type="module" src="../JS/blog.js" defer></script>
 </head>
 
 <body>
@@ -26,15 +26,15 @@
         </nav>
     </header>
     <main>
-        <form>
+        <form id="createBlog">
             <h2>Skapa ett blogginlägg</h2>
             <p>
                 <label for="Title">Titel:</label>
-                <input type="text" id="Title" name="Title" placeholder="Skriv in titel..." required>
+                <input type="text" id="Title" name="Title" placeholder="Skriv in titel..." maxlength="50" required>
             </p>
             <p>
                 <label for="blogText">Inlägg:</label>
-                <textarea id="blogText" name="blogText" rows="20" placeholder="Skriv ditt inlägg här..." required></textarea>
+                <textarea id="blogText" name="blogText" rows="20" placeholder="Skriv ditt inlägg här..." maxlength="2000" required></textarea>
             </p>
             <p>
                 <input type="submit" value="Publicera Inlägg">
@@ -46,7 +46,4 @@
         <p>&copy; 2026 Svampletarna</p>
     </footer>
 </body>
-
-</body>
-
 </html>

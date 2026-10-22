@@ -1,4 +1,4 @@
-let articleSectionRef
+let articleSectionRef;
 
 function init(){
     articleSectionRef = document.getElementById("articles"); // Hämta data från element med id "articles" //
