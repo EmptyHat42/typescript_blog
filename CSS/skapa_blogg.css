@@ -1,4 +1,3 @@
-
 main {
     width: 100%;
     margin-left: auto;
@@ -7,6 +6,12 @@ main {
 
 h1 {
     font-size: 1.5rem;
+}
+
+#redirectButton {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
 }
 
 .redirect-button {
@@ -29,13 +34,13 @@ form {
     margin-bottom: 2rem;
 }
 
-form > h2 {
+form>h2 {
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
 
-form > p {
+form>p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,7 +50,7 @@ form > p {
     gap: 0.5rem;
 }
 
-form > p > input {
+form>p>input {
     font-size: 1rem;
     border-radius: 20px;
     border: 1px solid var(--green);
@@ -54,9 +59,9 @@ form > p > input {
     box-sizing: border-box;
 }
 
-form > p > textarea {
+form>p>textarea {
     border-radius: 8px;
-    border: 1px solid var(--green); 
+    border: 1px solid var(--green);
     padding: 0.75rem;
     font: inherit;
     height: 150px;
@@ -64,14 +69,14 @@ form > p > textarea {
     box-sizing: border-box;
 }
 
-form > p:last-child {
+form>p:last-child {
     margin-bottom: 0;
     width: auto;
     align-self: flex-end;
     align-items: flex-end;
 }
 
-form > p:last-child > input {
+form>p:last-child>input {
     background-color: var(--cream);
     color: var(--darkgreen);
     padding-left: 0.8rem;
@@ -84,7 +89,7 @@ form > p:last-child > input {
     cursor: pointer;
 }
 
-form > p:last-child > input:hover {
+form>p:last-child>input:hover {
     background-color: var(--darkgreen);
     color: var(--white);
 }
