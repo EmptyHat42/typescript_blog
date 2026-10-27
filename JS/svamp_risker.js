@@ -1,4 +1,4 @@
-let articleSectionRef;
+let articleSectionRef
 
 function init(){
     articleSectionRef = document.getElementById("articles"); // Hämta data från element med id "articles" //
@@ -9,7 +9,7 @@ window.onload = init;
 // Async funktion för att hämta data från vårt json-dokument //
 async function fetchProducts(){
     try{
-        const response = await fetch("/JSON/speciellaEgenskaper.json"); // Vi väntar på att få respons data från produkter.json  //
+        const response = await fetch("../JSON/speciellaEgenskaper.json"); // Vi väntar på att få respons data från produkter.json  //
 
         if (!response.ok){ // OM nåt går fel när vi hämtar respons datan så säg att nåt gick fel och hoppa till catch //
             throw new Error("Någonting gick fel vid hämtningen");

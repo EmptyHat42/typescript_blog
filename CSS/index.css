@@ -1,18 +1,14 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 /* ===================================
    CSS för svampkort på startsidan
    =================================== */
-.svamp {
+.svampar>article {
   border: 1px solid #ccc;
   border-radius: 10px;
   margin: 10px;
   display: flex;
 }
-.svamp img {
+
+.svampar>article>img {
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -21,7 +17,8 @@
   border-radius: 10px;
   padding-right: 5px;
 }
-.svamp-info {
+
+.svampar>article>div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,7 +27,8 @@
   width: 100%;
   font-size: 14px;
 }
-.svamp-info h3,
+
+.svampar>article>div>h3,
 p {
   margin: 0;
 }
@@ -62,15 +60,18 @@ p {
   width: 100%;
   height: auto;
 }
+
 .hero-content {
   padding: 10px;
 }
+
 .hero-content h2 {
   line-height: 35px;
   margin-bottom: 1px;
   font-size: 2.5rem;
   font-weight: bold;
 }
+
 .hero-content h3 {
   line-height: 20px;
   margin-top: 5px;
@@ -78,17 +79,20 @@ p {
   margin-bottom: 10px;
   font-weight: 500;
 }
+
 .hero-content p {
   line-height: 20px;
   margin-top: 0px;
   padding-bottom: 5px;
   font-size: 15px;
 }
+
 .hero-buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .hero-buttons a {
   background-color: var(--darkgreen);
   color: var(--white);
@@ -98,11 +102,13 @@ p {
   display: inline-block;
   text-decoration: none;
 }
+
 .hero-buttons a:nth-child(2) {
   background-color: #e4ead8;
   color: var(--darkgreen);
   border: 1px solid var(--darkgreen);
 }
+
 .hero-buttons a:hover {
   background-color: var(--lightgreen);
   color: var(--darkgreen);
@@ -117,28 +123,34 @@ p {
 
 /* SURFPLATTA - MINST 600PX */
 @media (min-width: 600px) {
+
   .hero-image,
   .hero-content {
     padding: 10px;
   }
+
   .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   .hero-content h3 {
     font-size: 2rem;
     line-height: 2rem;
   }
+
   .hero-content p {
     font-size: 1.2rem;
     line-height: 1.5rem;
   }
+
   .hero-buttons {
     flex-direction: row;
     gap: 20px;
     justify-content: space-between;
   }
+
   .hero-buttons a {
     padding: 0.8rem 1rem;
     font-size: 1rem;
@@ -149,19 +161,22 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .svamp {
+
+  .svampar>article {
     flex-direction: column;
     max-width: 200px;
     box-shadow: 2px 2px 6px rgb(153, 152, 152);
     border: 1px solid var(--lightgreen);
   }
-  .svamp img {
+
+  .svampar>article>img {
     width: 200px;
     height: 200px;
     padding-right: 0px;
     border-radius: 10px 10px 0 0;
   }
-  .svamp-info {
+
+  .svampar>article>div {
     padding: 10px;
     border-radius: 0 0 10px 10px;
     height: 100%;
@@ -174,15 +189,19 @@ p {
     grid-template-columns: repeat(4, 1fr);
     padding-top: 20px;
   }
+
   .hero-content {
     padding: 15px;
   }
+
   .hero-content h3 {
     font-size: 1.5rem;
   }
+
   .hero-content h2 {
     font-size: 3rem;
   }
+
   .hero-buttons {
     padding: 10px 0;
   }
@@ -194,13 +213,16 @@ p {
     display: flex;
     flex-direction: row-reverse;
   }
+
   .hero-content h2 {
     font-size: 3.5rem;
     line-height: 3rem;
   }
+
   .hero-buttons a {
     width: auto;
   }
+
   .svampar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -214,11 +236,13 @@ p {
     flex-direction: row-reverse;
     padding-bottom: 40px;
   }
+
   .hero-image,
   .hero-content {
     flex: 1;
     padding: 20px;
   }
+
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -226,24 +250,29 @@ p {
     max-width: 40%;
     padding-right: 0px;
   }
+
   .hero-content h2 {
     font-size: 4rem;
     line-height: 4.5rem;
   }
+
   .hero-content h3 {
     font-size: 2rem;
     line-height: 2rem;
   }
+
   .hero-content p {
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding-bottom: 25px;
   }
+
   .hero-buttons {
     flex-direction: row;
     gap: 20px;
     justify-content: space-between;
   }
+
   .hero-buttons a {
     padding: 0.8rem 1rem;
     font-size: 1rem;
@@ -255,19 +284,22 @@ p {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
-  .svamp {
+
+  .svampar>article {
     flex-direction: column;
     max-width: 250px;
     box-shadow: 2px 2px 6px rgb(153, 152, 152);
     border: 1px solid var(--lightgreen);
   }
-  .svamp img {
+
+  .svampar>article>img {
     width: 250px;
     height: 250px;
     padding-right: 0px;
     border-radius: 10px 10px 0 0;
   }
-  .svamp-info {
+
+  .svampar>article>div {
     gap: 10px;
     padding: 10px;
     border-radius: 0 0 10px 10px;
