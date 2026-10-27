@@ -1,0 +1,125 @@
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.separator{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.separator > a{
+    align-content: center;
+    height: fit-content;
+}
+
+.separator-two{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+
+#allBlogPosts{
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.blog-post{
+    background-color: rgb(49, 91, 64, 20%);
+    border-radius: 20px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.blog-post h3, .blog-post p{
+    overflow-wrap: anywhere;
+}
+
+.text-section{
+    background-color: var(--lightgreen);
+    border-radius: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem;
+}
+
+.dateOnRight{
+    text-align: end;
+}
+
+.deleteBtn{
+    display: block;
+    background-color: var(--lightpink);
+    color: var(--red);
+    border: 1px solid var(--lightred);
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.deleteBtn:hover{
+    background-color: var(--red);
+    color: var(--lightpink);
+}
+
+form > p{
+    display: flex;
+    flex-direction: column;
+}
+
+form > p > textarea {
+    border-radius: 8px;
+    border: 1px solid var(--green); 
+    padding: 0.75rem;
+    font: inherit;
+    height: 150px;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+
+form > p:last-child {
+    margin-bottom: 0;
+    width: auto;
+    align-self: center;
+    align-items: center;
+}
+
+form > p:last-child > input {
+    background-color: var(--cream);
+    color: var(--darkgreen);
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form > p:last-child > input:hover {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+@media (min-width: 600px) {
+    #allBlogPosts{
+        min-width: 600px;
+        max-width: 1000px;
+    }
+}

@@ -14,23 +14,10 @@ main {
     height: auto;
 }
 
-.back-button {
-    background-color: var(--darkgreen);
-    color: var(--white);
-    padding: 0.5rem 0.8rem;
-    border-radius: 0.5rem;
-    display: block;
-    width: fit-content;
+.redirect-button{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-.back-button:hover {
-    background-color: var(--lightgreen);
-    color: var(--darkgreen);
 }
 
 form {
@@ -49,8 +36,13 @@ form>h1 {
     margin-bottom: 0;
 }
 
+#wrongDetails{
+    color: darkred;
+}
+
 form>p {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -58,30 +50,35 @@ form>p {
 }
 
 form>p>input {
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 20px;
     border-color: var(--green);
     padding-left: 10px;
     padding-right: 10px;
-    width: 175px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: auto;
 
 }
 
 form>p:last-child {
     margin-bottom: 1rem;
-    width: 120px;
+    width: auto;
+    align-self: flex-end;
+    align-items: flex-end;
 }
 
 form>p:last-child>input {
-    background-color: var(--darkgreen);
-    color: var(--white);
+    background-color: var(--cream);
+    color: var(--darkgreen);
     padding: 0.5rem 0.8rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     display: inline-block;
     text-decoration: none;
+    cursor: pointer;
 }
 
 form>p:last-child>input:hover {
-    background-color: var(--lightgreen);
-    color: var(--darkgreen);
+    background-color: var(--darkgreen);
+    color: var(--white);
 }

@@ -2,14 +2,14 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogg</title>
-    <link rel="stylesheet" href="../CSS/app.css" />
-    <link rel="stylesheet" href="../CSS/blogg.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
-    <script src="../JS/blogg.js" defer></script>
-    <script src="../JS/nav.js" defer></script>
+    <link rel="stylesheet" href="../CSS/app.css">
+    <link rel="stylesheet" href="../CSS/blogg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script type="module" src="../JS/blog.js" defer></script>
+    <script src="../JS/loggedIn.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <header>
         <nav aria-label="Huvudnavigation">
             <div class="logotyp">
-                <img src="/images/logotyp.jpg" alt="Svampletarnas logotyp">
+                <img src="../images/logotyp.jpg" alt="Svampletarnas logotyp">
                 <h1>Svampletarna</h1>
             </div>
             <ul>
@@ -48,9 +48,16 @@
         </nav>
     </header>
     <main>
-        <h2>Bloggen</h2>
-
+        <div class="separator">
+            <h2>Bloggen</h2>
+            <a href="skapa_blogg.html" id="redirectButton">Skapa Blogg</a>
+        </div>
+        <section id="allBlogPosts"></section>
     </main>
+    <footer>
+        <p>Svampletarna – För dig som älskar skogen</p>
+        <p>&copy; 2026 Svampletarna</p>
+    </footer>
 </body>
 
 </html>
