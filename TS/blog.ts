@@ -124,8 +124,8 @@ function displayBlog(): void {
         blogPosts = [];
     }
 
-    if(blogPosts.length === 0){
-        const noPosts = createCustomElement ("p", "Det finns inga blogginlägg. Logga in och skapa några!")
+    if (blogPosts.length === 0) {
+        const noPosts = createCustomElement("p", "Det finns inga blogginlägg. Logga in och skapa några!")
         postBlogRef?.appendChild(noPosts);
         return;
     }
@@ -192,19 +192,20 @@ function displayBlog(): void {
                 saveComment(event, post.id);
             });
             sectionOne.appendChild(commentForm);
-        } else {
-            element = createCustomElement("h3", "Du måste vara inloggad för att kommentera och skapa inlägg.");
-            sectionOne.appendChild(element);
-        }
 
-        if (isLoggedIn()) {
+            element = createCustomElement("hr");
+            sectionOne.appendChild(element);
+
             const deleteButton = createCustomElement("button", "Ta bort inlägg", "deleteBtn")
             deleteButton.addEventListener("click", () => {
                 deleteBlog(post.id);
             });
             sectionOne.appendChild(deleteButton);
+        } else {
+            element = createCustomElement("h3", "Du måste vara inloggad för att kommentera och skapa inlägg.");
+            sectionOne.appendChild(element);
         }
-        postBlogRef?.appendChild(sectionOne);
+        postBlogRef?.prepend(sectionOne);
     });
 }
 
